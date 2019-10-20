@@ -1,19 +1,19 @@
 
 // 两个共用文件
 @import './_mixin';
-@import './_var';
+// @import './_var';
 
 // 两个主题相关文件
-@import './_theme_var';
-@import './_theme_mixin';
+// @import './_theme_var';
+// @import './_theme_mixin';
 
 // 覆盖 elemenuUI 组件的样式  --每个组件单独的一个scss文件
-@import './element_ui/button';
-@import './element_ui/select';
-@import './element_ui/table';
-@import './element_ui/checkbox';
-@import './element_ui/input';
-@import './element_ui/collapse';
+// @import './element_ui/button';
+// @import './element_ui/select';
+// @import './element_ui/table';
+// @import './element_ui/checkbox';
+// @import './element_ui/input';
+// @import './element_ui/collapse';
 
 // 公共样式
-@import './common';
+// @import './common';

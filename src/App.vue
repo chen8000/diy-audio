@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <MyAudio />
+    <MyAudio :src="require('@/assets/audio/m.mp3')"/>
   </div>
 </template>
 
@@ -13,3 +13,9 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+  #app {
+    width: 500px;
+    margin-top: 100px;
+  }
+</style>

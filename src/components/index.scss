@@ -13,9 +13,6 @@
     text-align: center;
     cursor: pointer;
     .iconfont {
-      @include theme($themes) {
-        color: themed('textDarkColor');
-      }
       display: inline-block;
       transition: color .3s ease;
       @include wh(20px, 20px);
@@ -26,11 +23,6 @@
       left: 0;
       right: 0;
       margin: auto;
-      &:hover {
-        @include theme($themes) {
-          color: themed('themeColor');
-        }
-      }
     }
     .soundno {
       font-size: 23px;
@@ -86,18 +78,13 @@
         margin: auto 0;
         font-size: 20px;
         cursor: pointer;
-        @include theme($themes) {
-          color: themed('themeColor');
-        }
       }
     }
   }
   .currentTime {
       font-size: 14px;
+      margin: 0 auto;
       margin-right: 20px;
-      @include theme($themes) {
-        color: themed('textColor')
-      }
     }
     .el-slider {
       flex: 1;
@@ -107,9 +94,6 @@
     }
     .el-slider__bar {
       height: 4px;
-      @include theme($themes) {
-        background: themed('themeColor');
-      }
     }
     .el-slider__button-wrapper {
       @include wh(35px, 35px);
@@ -117,10 +101,6 @@
     }
     .el-slider__button {
       @include wh(10px, 10px);
-      @include theme($themes) {
-        background: themed('themeColor');
-        border-color: themed('themeColor');
-      }
     }
     .el-slider__runway {
       background: rgba(111, 140, 242, 0.15);
