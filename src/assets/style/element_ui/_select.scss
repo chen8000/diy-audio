@@ -1,0 +1,16 @@
+
+.sip-select {
+  .select-box {
+    display: inline-block;
+    margin-right: 60px; 
+  }
+  .el-input__inner {
+    @include radius(20px);
+    @include clearInput;
+  }
+  .el-date-editor .el-range-separator {
+    @include theme($themes) {
+      color: themed('textColor');
+    }
+  }
+}

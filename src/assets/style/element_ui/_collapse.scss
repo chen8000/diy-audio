@@ -1,0 +1,62 @@
+.sip-collapse {
+  .el-collapse-item__arrow {
+    display: none;
+  }
+  .el-collapse-item__wrap {
+    background: none;
+  }
+  .el-collapse {
+    background: #EDEDED;
+  }
+  .el-collapse-item__header {
+    @include radius(4px);
+  }
+  .collapse-title {
+    font-size: 16px;
+    margin-left: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    position: relative;
+    @include theme($themes) {
+      color: themed('titleColor')
+    }
+    .iconfont {
+      @include theme($themes) {
+        color: themed('textDarkColor');
+      }
+      font-size: 14px;
+      margin-right: 5px;
+      transition: transform .3s ease-in-out;
+      position: absolute;
+      left: 0;
+    }
+    .icon-add {
+      transform: scale(1);
+    }
+    .icon-less {
+      transform: scale(0);
+    }
+  }
+  .el-collapse-item.is-active {
+    .icon-add {
+      transform: scale(0);
+    }
+    .icon-less {
+      transform: scale(1);
+    }
+  }
+  .collapse-container {
+    padding: 25px;
+    padding-bottom: 0;
+    font-size: 16px;
+    @include theme($themes) {
+      color: themed('textColor');
+    }
+    p {
+      margin-bottom: 8px;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

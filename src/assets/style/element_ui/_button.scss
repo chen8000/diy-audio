@@ -1,0 +1,28 @@
+.sip-button {
+  .el-button--primary {
+    @include theme($themes) {
+      background: themed('themeColor');
+    }
+    border: 0;
+  }
+  .el-button--primary:hover {
+    @include theme($themes) {
+      background: themed('themeHoverColor');
+    }
+  }
+  .el-button--default {
+    border: 0;
+    @include theme($themes) {
+      color: themed('themeColor');
+    }
+  }
+  .el-button--default:hover {
+    @include theme($themes) {
+      background: themed('themeWhiteBtnHoverColor');
+      color:  themed('themeHoverColor');
+    }
+  }
+  .el-button--medium.is-round {
+    padding: 8px 26px;
+  }
+}

@@ -1,0 +1,38 @@
+.sip-input {
+  .el-input__inner {
+    @include clearInput;
+    @include radius(20px);
+    @include theme($themes) {
+      background: themed('detailInputBg');
+    }
+    @include wh(240px, 32px);
+  }
+  .el-input {
+    @include wh(240px, 32px);
+  }
+  .el-input__icon {
+    line-height: 32px;
+    font-size: 25px;
+  }
+  .el-input--suffix .el-input__inner {
+    padding-right: 35px;
+  }
+  .el-input__suffix {
+    right: 8px;
+  }
+  .el-date-editor {
+    width: 280px;
+    .el-input__icon {
+      font-size: 16px;
+      line-height: 27px;
+    }
+    .el-range-separator {
+      @include theme($themes) {
+        color: themed('textColor');
+      }
+    }
+    .el-range-input {
+      background: none;
+    }
+  }
+}

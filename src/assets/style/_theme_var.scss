@@ -1,0 +1,65 @@
+
+// 两种主题切换
+$themes: (
+  // 暗色系 [定义变量名称和值]
+  theme-dark: (
+
+    // 主题色
+    themeColor: #6F8CF2,
+
+    // 主题色hover
+    themeHoverColor: rgb(142, 162, 238),
+
+    // 右侧内容的背景color
+    bodyBg:#F2F2F2,
+
+    // 详情表格背景色
+    detailBg: #F8F8F8,
+    // 详情表格列的背景
+    detailTrBg: #fff,
+    // 详情input背景
+    detailInputBg: #F2F2F2,
+
+    // 表格列的背景色
+    tableTrBg: #F8F8F8,
+
+    // button 灰色背景
+    buttonGreyBg: #F2F2F2,
+
+    // 白色按钮hover
+    themeWhiteBtnHoverColor: rgb(228, 231, 247),
+
+    // menu 背景
+    menuBg: #1E213B,
+    // menu hover 
+    menuHover: #343858,
+
+    // 标题深色
+    titleDarkColor: #333,
+    // 标题文字颜色
+    titleColor: #4E4E4E,
+
+    // 文字颜色
+    textColor: #666,
+
+    // 文字暗色
+    textDarkColor: #979797,
+
+    // ip类型颜色
+    ipTypeColor: #4DE598,
+
+    // 登陆框的背景
+    sceneBg: #fff,
+
+    // 边框颜色
+    borderColor: #D2D2D2,
+    // 浅色边框
+    borderDarkColor: rgb(233, 233, 233),
+
+  ),
+
+  // 亮色系
+  theme-light: (
+    
+  )
+);

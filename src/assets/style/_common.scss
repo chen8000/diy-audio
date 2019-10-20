@@ -1,0 +1,28 @@
+
+// 透明title 带左侧 | 
+@mixin info-title($c) {
+  font-size: 16px;
+  @include theme($themes) {
+    color: themed('titleColor');
+  }
+  margin-left: $bodyPadding;
+  position: relative;
+  padding-left: 12px;
+  margin-top: 0;
+  margin-bottom: 0;
+  @include wh(auto, 40px);
+  line-height: 40px;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    @include wh(2px, 40%);
+    @include theme($themes) {
+      background: themed($c)
+    }
+  }
+}
